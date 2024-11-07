@@ -1,0 +1,102 @@
+.chat-app {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 300px;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .search-bar {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .user-list {
+    max-height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+  
+  .user-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .user-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .chat-screen {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .chat-header {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .chat-body {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  .message {
+    margin-bottom: 8px;
+  }
+  
+  .chat-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .chat-footer input {
+    width: 80%;
+    padding: 8px;
+  }
+  
+  .chat-footer button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .chat-footer button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Styling for the logout button */
+.logout-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #ff4d4d;  /* Red background color for logout */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #e60000;  /* Darker red when hovered */
+    transform: scale(1.05); /* Slight scale effect on hover */
+  }
+  
+  .logout-button:focus {
+    outline: none; /* Remove the outline when button is focused */
+  }
+  
